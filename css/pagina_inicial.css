@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+:root {
+    --font: "Pixelify Sans", sans-serif;
+
+    --cor1: #68b2f8;
+    --cor2: #506ee5;
+    --cor3: #0d0502;
+    --cor4: #ffffff;
+}
+
+body {
+    margin: 0;
+}
+
+header h1 {
+    font-family: var(--font);
+    text-align: center;
+    color: var(--cor4);
+    background-color: var(--cor3);
+}

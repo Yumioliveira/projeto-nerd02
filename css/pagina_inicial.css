@@ -11,13 +11,79 @@
     --cor4: #ffffff;
 }
 
-body {
-    margin: 0;
+html, body {
+    margin: 0px;
+    padding: 0px;
 }
 
+header {
+    background-color: #0d0502;
+    padding: 5px 0px 5px 0px;
+}
 header h1 {
     font-family: var(--font);
+    font-size: 4em;
     text-align: center;
-    color: var(--cor4);
-    background-color: var(--cor3);
+    color: white;
+}
+
+nav {
+    text-align: center;
+    background-color: var(--cor2);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+
+
+nav a#geek::after {
+    content: "\00A0\2B50";
+}
+nav a#ciencia::after {
+    content: "\00A0\1F52C";
+}
+nav a#local::after {
+    content: "\00A0\1F3E0";
+}
+nav a#internacional::after {
+    content: "\00A0\1F310";
+}
+
+nav a:hover {
+    padding: 3px 10px 3px 10px;
+    background-color: lightcoral;
+    border-radius: 10px;
+    transition: 1s;
+    color: black;
+}
+main {
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    background-color: lightpink;
+}
+
+section {
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section div.conteudo {
+    width: 70%;
+    height: 200px;
+    background-color: #68b2f8;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
 }
